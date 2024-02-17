@@ -1,0 +1,22 @@
+.sidebar{
+  background-color: white;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  width: 72px;
+}
+
+.sidebar-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 74px;
+  width: 72px;
+  font-size: 10px;
+}
+
+.icons-size{
+  height: 24px;
+}

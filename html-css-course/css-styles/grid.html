@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+
+  <body style="padding-bottom: 1000px">
+    <div style="display: grid; grid-template-columns: 100px 100px">
+      <div style="background-color: lightblue">div 1</div>
+      <div style="background-color: lightpink">
+        div 2
+        <p>text</p>
+      </div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+      "
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">
+        100px
+        <p>text</p>
+      </div>
+      <div style="background-color: lightblue">200px</div>
+      <div style="background-color: lightpink">
+        100px
+        <p>text</p>
+      </div>
+    </div>
+
+    <div
+      style="margin-top: 30px; display: grid; grid-template-columns: 100px 1fr"
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">1fr</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr 2fr;
+      "
+    >
+      <div style="background-color: lightblue">100px</div>
+      <div style="background-color: lightpink">1fr</div>
+      <div style="background-color: lightblue">2fr</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      "
+    >
+      <div style="background-color: lightblue; height: 200px">1fr</div>
+      <div style="background-color: lightpink; height: 200px">1fr</div>
+      <div style="background-color: lightblue; height: 200px">1fr</div>
+      <div style="background-color: lightpink; height: 200px">1fr</div>
+      <div style="background-color: lightblue; height: 200px">1fr</div>
+      <div style="background-color: lightpink; height: 200px">1fr</div>
+    </div>
+  </body>
+</html>
+
+<!--display: grid;: Define o contêiner como um grid.
+
+grid-template-columns e grid-template-rows: Define o tamanho e a quantidade de colunas e linhas no grid, respectivamente. 
+Você pode especificar os tamanhos usando valores absolutos, como pixels ou porcentagens, ou usando unidades fracionárias (fr), 
+que dividem o espaço disponível de forma igual.
+
+grid-gap: Define o espaçamento entre as células do grid, tanto na direção de linha quanto na direção de coluna.
+
+grid-column e grid-row: Controla a posição de um item dentro do grid, especificando em quais linhas e colunas ele deve ser 
+colocado.
+
+justify-items e align-items: Define o alinhamento dos itens dentro das células do grid, na direção de linha e na direção de 
+coluna, respectivamente.
+
+justify-content e align-content: Define o alinhamento do próprio grid dentro do contêiner, na direção de linha e na direção de 
+coluna, respectivamente.
+
+grid-auto-rows e grid-auto-columns: Define o tamanho padrão das linhas e colunas que não foram explicitamente definidas no 
+grid-template-rows e grid-template-columns.
+
+grid-auto-flow: Controla como os itens são colocados em células de grid automáticas. Você pode especificar se os itens devem 
+ser colocados em novas linhas (row), novas colunas (column) ou em ambas (dense).
+
+Aqui está um exemplo básico de como você pode usar essas propriedades para formatar um grid:
+
+css
+Copy code
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr;
+    grid-template-rows: 50px 100px;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+Este exemplo cria um grid com três colunas de tamanhos diferentes (100px, 200px e uma fração igual do espaço disponível) e
+ duas linhas de tamanhos fixos (50px e 100px). Ele também define um espaçamento entre as células de 10px e alinha os itens e 
+ o próprio grid ao centro tanto na direção de linha quanto na direção de coluna.
+
+Com essas propriedades, você pode criar layouts complexos e responsivos de maneira flexível e poderosa usando CSS Grid Layout.-->

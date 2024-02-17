@@ -1,0 +1,27 @@
+p{
+  font-family: "Protest Revolution";
+  margin:0px;
+}
+.user{
+  color:gray;
+}
+
+.time{
+  color:gray;
+  margin-left: 3px;
+}
+
+.subtitle{
+  width: 500px;
+  margin-top:6px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.arroba{
+  color:rgb(0, 162, 255);
+  cursor: pointer;
+}
+.arroba:hover{
+  text-decoration: underline;
+}
